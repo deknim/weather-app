@@ -1,16 +1,38 @@
-# React + Vite
+Aplikacja pogodowa
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+Prosta aplikacja webowa (React) do sprawdzania aktualnej pogody (prognozy na 7 dni), wykorzystująca darmowe, publiczne API Open-Meteo.
 
-Currently, two official plugins are available:
+Funkcjonalności
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+- wyszukiwanie miasta z podpowiedziami (autouzupełnianie)
+- wykrywanie lokalizacji urządzenia (geolokacja API przeglądarki)
+- aktualna pogoda: temperatura, temperatura odczuwalna, zachmurzenie, wiatr, wilgotność
+- prognoza na 7 dni: temp. min/max, opis pogody, prawdopodobieństwo opadów
 
-## React Compiler
+Technologie
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- React 18+
+- Vite
+- lucide-react - ikony interfejsu
+- Open-Meteo API - dane pogodowe i geokodowanie
 
-## Expanding the Oxlint configuration
+Wymagania
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and Oxlint's TypeScript related rules in your project.
+- Node.js w wersji LTS (18+)
+- npm
+
+Instalacja i uruchomienie
+
+terminal
+
+1. Sklonuj repozytorium
+git clone https://github.com/deknim/weather-app.git
+cd weather-app
+
+2. Zainstaluj zależności
+npm install
+
+3. Uruchom serwer deweloperski
+npm run dev
+
+Aplikacja będzie dostępna pod adresem wyświetlonym w terminalu, domyślnie: http://localhost:5173/
